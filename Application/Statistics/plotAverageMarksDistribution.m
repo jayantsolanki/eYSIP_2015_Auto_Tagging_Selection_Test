@@ -15,7 +15,7 @@ clc;
 
 % Read the data
 fprintf("\n\nReading the data...\n");
-X = csvread('AverageMarks.csv');
+X = csvread('AverageMarks.csv')
 fprintf("Data Read.\n");
 
 % Find the Average and Standard Deviation
@@ -33,9 +33,11 @@ fprintf("Minimum Marks = %f\n", minMarks);
 fprintf("Maximum Marks = %f\n", maxMarks);
 
 % Plot the data
+y=minMarks:maxMarks
 fprintf("\n\nPlotting the data...\n");
 hist(X, [minMarks:maxMarks]);
 xlabel("Average Team Marks");
 ylabel("Number of Teams");
 title("Distribution of Average Team Marks");
+print("2015 Selection Test.png", "-dpng")
 fprintf("Done plotting.\n\n\n");
