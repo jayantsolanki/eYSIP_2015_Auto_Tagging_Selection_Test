@@ -39,5 +39,5 @@ hist(X, [minMarks:maxMarks]);
 xlabel("Average Team Marks");
 ylabel("Number of Teams");
 title("Distribution of Average Team Marks");
-print("2015 Selection Test.png", "-dpng")
+%print("2015 Selection Test.png", "-dpng")
 fprintf("Done plotting.\n\n\n");
